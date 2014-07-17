@@ -1,6 +1,6 @@
 # loopback-example-database
 
-This project contains examples to demonstrate [LoopBack](http://loopback.io) connectors for databases:
+This project contains examples to demonstrate [LoopBack](http://loopback.io) connector for databases:
 
 - [LoopBack MongoDB connector](https://github.com/strongloop/loopback-connector-mongodb)
 
@@ -111,4 +111,4 @@ All the REST APIs can be explored at:
 
     use rahul
 
-    to check all data db.collection.find();
+    to check all data db.first_names.find();
