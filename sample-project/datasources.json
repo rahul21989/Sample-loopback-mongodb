@@ -1,0 +1,22 @@
+{
+  "db": {
+    "connector": "memory",
+    "defaultForType": "db"
+  },
+  "push": {
+    "connector": "loopback-push-notification",
+    "defaultForType": "push",
+    "installation": "installation",
+    "notification": "notification",
+    "application": "application"
+  },
+  "mail": {
+    "connector": "mail",
+    "defaultForType": "mail"
+  },
+  "mongodb": {
+     "defaultForType": "mongodb",
+     "connector": "loopback-connector-mongodb",
+     "url": "mongodb://localhost:27017/rahul"
+  }
+}

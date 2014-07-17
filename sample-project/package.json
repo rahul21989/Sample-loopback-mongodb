@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "main": "app.js",
+  "bin": "server.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "loopback-datasource-juggler": "1.x.x",
+    "loopback-connector-mongodb": "1.x.x"
+  },
+  "optionalDependencies": {
+    "loopback-explorer": "~1.1.0",
+    "loopback-component-push": "~1.2.2"
+  },
+  "name": "sample-project"
+}

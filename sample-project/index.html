@@ -1,0 +1,32 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+
+</script>
+</head>
+ <body>
+	<form name="input">
+		title: <input type="text" name="title" id="text-query"><br />
+		name: <input type="text" name="name" id="text-name"><br />
+		<input type="button" value="Submit" id="submitButton">
+	</form>
+	<script>
+		$('#submitButton').click(function(){
+			var myObj = {};
+			myObj.title = $('#text-query').val();
+			myObj.name = $('#text-name').val();
+			$.ajax({
+			  type: "post",
+			  url: "http://0.0.0.0:3000/api/first_names",
+			  data: myObj,
+			  success: function(data,resTxt,jqXHR){
+			  	alert('insert data successfully');
+			  },
+			  error:function(){
+			  	console.log("went in error");
+			  }
+			});
+		});
+	 </script>
+ </body>
+</html>
