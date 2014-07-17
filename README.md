@@ -112,4 +112,3 @@ All the REST APIs can be explored at:
     use rahul
 
     to check all data db.collection.find();
-
