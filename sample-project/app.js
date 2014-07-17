@@ -45,7 +45,7 @@ app.use(apiPath, function(req,res,next){
     // send status response
     var accounts = [req.body];
     var count = accounts.length;
-    dataSource.automigrate('first_model', function (err) {
+    dataSource.autoupdate('first_model', function (err) {
       accounts.forEach(function(act) {
         Account.create(act, function(err, result) {
           if(!err) {
